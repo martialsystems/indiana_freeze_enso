@@ -1,0 +1,1513 @@
+{
+  "stage": "0",
+  "fixture": true,
+  "question": "Does October plus ENSO beat the 1991-2020 median first/last 32 \u00b0F date at held-out Indiana GHCND cores?",
+  "source": "fixture",
+  "n_rows": 284,
+  "n_stations": 4,
+  "units": "days",
+  "threshold_f": 32.0,
+  "element": "TMIN",
+  "feature_october": "prior_year",
+  "parent_sha": "28941fb",
+  "p_sfha_feature": false,
+  "nwm_file": false,
+  "snow_as_tmin": false,
+  "same_year_october": false,
+  "page_in_scope": false,
+  "ridge_beats_median": true,
+  "ridge_loses_both": false,
+  "figures": [
+    "scatter.png",
+    "mae_bars.png"
+  ],
+  "n_kept": 284,
+  "n_train": 228,
+  "n_holdout": 48,
+  "n_confirm": 8,
+  "holdout_cores": {
+    "by_target": {
+      "first_fall": {
+        "median": {
+          "n": 24,
+          "mae_days": 4.583333333333333,
+          "rmse_days": 5.605057240266746,
+          "bias_days": -2.5
+        },
+        "last_year": {
+          "n": 24,
+          "mae_days": 7.625,
+          "rmse_days": 8.477912478906585,
+          "bias_days": -2.7083333333333335
+        },
+        "ridge": {
+          "n": 24,
+          "mae_days": 2.25,
+          "rmse_days": 2.798809270624444,
+          "bias_days": -0.25
+        },
+        "n": 24
+      },
+      "last_spring": {
+        "median": {
+          "n": 24,
+          "mae_days": 3.7083333333333335,
+          "rmse_days": 5.029082089871538,
+          "bias_days": 2.375
+        },
+        "last_year": {
+          "n": 24,
+          "mae_days": 5.708333333333333,
+          "rmse_days": 6.742279535389595,
+          "bias_days": -0.5416666666666666
+        },
+        "ridge": {
+          "n": 24,
+          "mae_days": 1.7083333333333333,
+          "rmse_days": 2.5248762345905194,
+          "bias_days": 0.7083333333333334
+        },
+        "n": 24
+      }
+    },
+    "by_station": {
+      "USW00014827": {
+        "name": "Fort Wayne",
+        "station_id": "USW00014827",
+        "first_fall": {
+          "median": {
+            "n": 6,
+            "mae_days": 4.833333333333333,
+            "rmse_days": 5.70087712549569,
+            "bias_days": -1.1666666666666667
+          },
+          "last_year": {
+            "n": 6,
+            "mae_days": 7.5,
+            "rmse_days": 7.799572637865061,
+            "bias_days": -1.8333333333333333
+          },
+          "ridge": {
+            "n": 6,
+            "mae_days": 2.5,
+            "rmse_days": 3.4399612400917157,
+            "bias_days": 0.5
+          },
+          "n": 6
+        },
+        "last_spring": {
+          "median": {
+            "n": 6,
+            "mae_days": 2.5,
+            "rmse_days": 2.798809270624444,
+            "bias_days": 0.5
+          },
+          "last_year": {
+            "n": 6,
+            "mae_days": 3.6666666666666665,
+            "rmse_days": 4.08248290463863,
+            "bias_days": -0.6666666666666666
+          },
+          "ridge": {
+            "n": 6,
+            "mae_days": 1.3333333333333333,
+            "rmse_days": 1.8257418583505538,
+            "bias_days": -0.6666666666666666
+          },
+          "n": 6
+        }
+      },
+      "USW00014848": {
+        "name": "South Bend",
+        "station_id": "USW00014848",
+        "first_fall": {
+          "median": {
+            "n": 6,
+            "mae_days": 5.666666666666667,
+            "rmse_days": 6.831300510639732,
+            "bias_days": -2.6666666666666665
+          },
+          "last_year": {
+            "n": 6,
+            "mae_days": 9.5,
+            "rmse_days": 9.789450103725608,
+            "bias_days": -3.5
+          },
+          "ridge": {
+            "n": 6,
+            "mae_days": 2.6666666666666665,
+            "rmse_days": 3.0550504633038935,
+            "bias_days": 0.0
+          },
+          "n": 6
+        },
+        "last_spring": {
+          "median": {
+            "n": 6,
+            "mae_days": 3.6666666666666665,
+            "rmse_days": 5.196152422706632,
+            "bias_days": 3.6666666666666665
+          },
+          "last_year": {
+            "n": 6,
+            "mae_days": 5.166666666666667,
+            "rmse_days": 5.873670062235365,
+            "bias_days": -0.5
+          },
+          "ridge": {
+            "n": 6,
+            "mae_days": 1.3333333333333333,
+            "rmse_days": 1.8257418583505538,
+            "bias_days": 1.0
+          },
+          "n": 6
+        }
+      },
+      "USW00093817": {
+        "name": "Evansville",
+        "station_id": "USW00093817",
+        "first_fall": {
+          "median": {
+            "n": 6,
+            "mae_days": 3.0,
+            "rmse_days": 4.203173404306164,
+            "bias_days": -2.6666666666666665
+          },
+          "last_year": {
+            "n": 6,
+            "mae_days": 6.333333333333333,
+            "rmse_days": 7.767453465154029,
+            "bias_days": -3.0
+          },
+          "ridge": {
+            "n": 6,
+            "mae_days": 1.6666666666666667,
+            "rmse_days": 2.0,
+            "bias_days": -0.3333333333333333
+          },
+          "n": 6
+        },
+        "last_spring": {
+          "median": {
+            "n": 6,
+            "mae_days": 3.6666666666666665,
+            "rmse_days": 4.654746681256314,
+            "bias_days": 1.6666666666666667
+          },
+          "last_year": {
+            "n": 6,
+            "mae_days": 6.166666666666667,
+            "rmse_days": 6.620674688680402,
+            "bias_days": -0.5
+          },
+          "ridge": {
+            "n": 6,
+            "mae_days": 1.3333333333333333,
+            "rmse_days": 2.160246899469287,
+            "bias_days": 0.3333333333333333
+          },
+          "n": 6
+        }
+      },
+      "USW00093819": {
+        "name": "Indianapolis",
+        "station_id": "USW00093819",
+        "first_fall": {
+          "median": {
+            "n": 6,
+            "mae_days": 4.833333333333333,
+            "rmse_days": 5.369667897862337,
+            "bias_days": -3.5
+          },
+          "last_year": {
+            "n": 6,
+            "mae_days": 7.166666666666667,
+            "rmse_days": 8.396427811873332,
+            "bias_days": -2.5
+          },
+          "ridge": {
+            "n": 6,
+            "mae_days": 2.1666666666666665,
+            "rmse_days": 2.48327740429189,
+            "bias_days": -1.1666666666666667
+          },
+          "n": 6
+        },
+        "last_spring": {
+          "median": {
+            "n": 6,
+            "mae_days": 5.0,
+            "rmse_days": 6.683312551921141,
+            "bias_days": 3.6666666666666665
+          },
+          "last_year": {
+            "n": 6,
+            "mae_days": 7.833333333333333,
+            "rmse_days": 9.318440498996242,
+            "bias_days": -0.5
+          },
+          "ridge": {
+            "n": 6,
+            "mae_days": 2.8333333333333335,
+            "rmse_days": 3.763863263545405,
+            "bias_days": 2.1666666666666665
+          },
+          "n": 6
+        }
+      }
+    },
+    "ridge_beats_both": true,
+    "ridge_loses_both": false,
+    "n": 48
+  },
+  "confirm": {
+    "by_target": {
+      "first_fall": {
+        "median": {
+          "n": 4,
+          "mae_days": 2.5,
+          "rmse_days": 3.24037034920393,
+          "bias_days": 2.5
+        },
+        "last_year": {
+          "n": 4,
+          "mae_days": 8.25,
+          "rmse_days": 8.381527307120106,
+          "bias_days": 8.25
+        },
+        "ridge": {
+          "n": 4,
+          "mae_days": 2.0,
+          "rmse_days": 2.5495097567963922,
+          "bias_days": 1.5
+        },
+        "n": 4
+      },
+      "last_spring": {
+        "median": {
+          "n": 4,
+          "mae_days": 4.75,
+          "rmse_days": 5.545268253204709,
+          "bias_days": 4.75
+        },
+        "last_year": {
+          "n": 4,
+          "mae_days": 6.5,
+          "rmse_days": 7.582875444051551,
+          "bias_days": 6.5
+        },
+        "ridge": {
+          "n": 4,
+          "mae_days": 2.5,
+          "rmse_days": 3.082207001484488,
+          "bias_days": 0.0
+        },
+        "n": 4
+      }
+    },
+    "by_station": {
+      "USW00014827": {
+        "name": "Fort Wayne",
+        "station_id": "USW00014827",
+        "first_fall": {
+          "median": {
+            "n": 1,
+            "mae_days": 1.0,
+            "rmse_days": 1.0,
+            "bias_days": 1.0
+          },
+          "last_year": {
+            "n": 1,
+            "mae_days": 6.0,
+            "rmse_days": 6.0,
+            "bias_days": 6.0
+          },
+          "ridge": {
+            "n": 1,
+            "mae_days": 1.0,
+            "rmse_days": 1.0,
+            "bias_days": -1.0
+          },
+          "n": 1
+        },
+        "last_spring": {
+          "median": {
+            "n": 1,
+            "mae_days": 7.0,
+            "rmse_days": 7.0,
+            "bias_days": 7.0
+          },
+          "last_year": {
+            "n": 1,
+            "mae_days": 9.0,
+            "rmse_days": 9.0,
+            "bias_days": 9.0
+          },
+          "ridge": {
+            "n": 1,
+            "mae_days": 2.0,
+            "rmse_days": 2.0,
+            "bias_days": 2.0
+          },
+          "n": 1
+        }
+      },
+      "USW00014848": {
+        "name": "South Bend",
+        "station_id": "USW00014848",
+        "first_fall": {
+          "median": {
+            "n": 1,
+            "mae_days": 0.0,
+            "rmse_days": 0.0,
+            "bias_days": 0.0
+          },
+          "last_year": {
+            "n": 1,
+            "mae_days": 10.0,
+            "rmse_days": 10.0,
+            "bias_days": 10.0
+          },
+          "ridge": {
+            "n": 1,
+            "mae_days": 0.0,
+            "rmse_days": 0.0,
+            "bias_days": 0.0
+          },
+          "n": 1
+        },
+        "last_spring": {
+          "median": {
+            "n": 1,
+            "mae_days": 0.0,
+            "rmse_days": 0.0,
+            "bias_days": 0.0
+          },
+          "last_year": {
+            "n": 1,
+            "mae_days": 0.0,
+            "rmse_days": 0.0,
+            "bias_days": 0.0
+          },
+          "ridge": {
+            "n": 1,
+            "mae_days": 5.0,
+            "rmse_days": 5.0,
+            "bias_days": -5.0
+          },
+          "n": 1
+        }
+      },
+      "USW00093817": {
+        "name": "Evansville",
+        "station_id": "USW00093817",
+        "first_fall": {
+          "median": {
+            "n": 1,
+            "mae_days": 4.0,
+            "rmse_days": 4.0,
+            "bias_days": 4.0
+          },
+          "last_year": {
+            "n": 1,
+            "mae_days": 8.0,
+            "rmse_days": 8.0,
+            "bias_days": 8.0
+          },
+          "ridge": {
+            "n": 1,
+            "mae_days": 3.0,
+            "rmse_days": 3.0,
+            "bias_days": 3.0
+          },
+          "n": 1
+        },
+        "last_spring": {
+          "median": {
+            "n": 1,
+            "mae_days": 5.0,
+            "rmse_days": 5.0,
+            "bias_days": 5.0
+          },
+          "last_year": {
+            "n": 1,
+            "mae_days": 7.0,
+            "rmse_days": 7.0,
+            "bias_days": 7.0
+          },
+          "ridge": {
+            "n": 1,
+            "mae_days": 0.0,
+            "rmse_days": 0.0,
+            "bias_days": 0.0
+          },
+          "n": 1
+        }
+      },
+      "USW00093819": {
+        "name": "Indianapolis",
+        "station_id": "USW00093819",
+        "first_fall": {
+          "median": {
+            "n": 1,
+            "mae_days": 5.0,
+            "rmse_days": 5.0,
+            "bias_days": 5.0
+          },
+          "last_year": {
+            "n": 1,
+            "mae_days": 9.0,
+            "rmse_days": 9.0,
+            "bias_days": 9.0
+          },
+          "ridge": {
+            "n": 1,
+            "mae_days": 4.0,
+            "rmse_days": 4.0,
+            "bias_days": 4.0
+          },
+          "n": 1
+        },
+        "last_spring": {
+          "median": {
+            "n": 1,
+            "mae_days": 7.0,
+            "rmse_days": 7.0,
+            "bias_days": 7.0
+          },
+          "last_year": {
+            "n": 1,
+            "mae_days": 10.0,
+            "rmse_days": 10.0,
+            "bias_days": 10.0
+          },
+          "ridge": {
+            "n": 1,
+            "mae_days": 3.0,
+            "rmse_days": 3.0,
+            "bias_days": 3.0
+          },
+          "n": 1
+        }
+      }
+    },
+    "ridge_beats_both": true,
+    "ridge_loses_both": false,
+    "n": 8
+  },
+  "holdout_rows": [
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "lat": 41.71,
+      "lon": -86.32,
+      "target": "first_fall",
+      "season_year": 2019,
+      "split": "holdout",
+      "obs": "2019-10-03",
+      "obs_yday": 276,
+      "median": "10-03",
+      "last_year": "2018-09-22",
+      "ridge": "10-05",
+      "err_median_days": 0,
+      "err_last_year_days": -11,
+      "err_ridge_days": 2
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "lat": 41.71,
+      "lon": -86.32,
+      "target": "first_fall",
+      "season_year": 2020,
+      "split": "holdout",
+      "obs": "2020-10-12",
+      "obs_yday": 286,
+      "median": "10-03",
+      "last_year": "2019-10-03",
+      "ridge": "10-11",
+      "err_median_days": -9,
+      "err_last_year_days": -9,
+      "err_ridge_days": -1
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "lat": 41.71,
+      "lon": -86.32,
+      "target": "first_fall",
+      "season_year": 2021,
+      "split": "holdout",
+      "obs": "2021-10-06",
+      "obs_yday": 279,
+      "median": "10-03",
+      "last_year": "2020-10-12",
+      "ridge": "10-03",
+      "err_median_days": -3,
+      "err_last_year_days": 6,
+      "err_ridge_days": -3
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "lat": 41.71,
+      "lon": -86.32,
+      "target": "first_fall",
+      "season_year": 2022,
+      "split": "holdout",
+      "obs": "2022-09-24",
+      "obs_yday": 267,
+      "median": "10-03",
+      "last_year": "2021-10-06",
+      "ridge": "09-29",
+      "err_median_days": 9,
+      "err_last_year_days": 12,
+      "err_ridge_days": 5
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "lat": 41.71,
+      "lon": -86.32,
+      "target": "first_fall",
+      "season_year": 2023,
+      "split": "holdout",
+      "obs": "2023-10-06",
+      "obs_yday": 279,
+      "median": "10-03",
+      "last_year": "2022-09-24",
+      "ridge": "10-07",
+      "err_median_days": -3,
+      "err_last_year_days": -12,
+      "err_ridge_days": 1
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "lat": 41.71,
+      "lon": -86.32,
+      "target": "first_fall",
+      "season_year": 2024,
+      "split": "holdout",
+      "obs": "2024-10-13",
+      "obs_yday": 287,
+      "median": "10-03",
+      "last_year": "2023-10-06",
+      "ridge": "10-09",
+      "err_median_days": -10,
+      "err_last_year_days": -7,
+      "err_ridge_days": -4
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "lat": 41.71,
+      "lon": -86.32,
+      "target": "last_spring",
+      "season_year": 2020,
+      "split": "holdout",
+      "obs": "2020-04-17",
+      "obs_yday": 108,
+      "median": "04-26",
+      "last_year": "2019-04-23",
+      "ridge": "04-18",
+      "err_median_days": 9,
+      "err_last_year_days": 6,
+      "err_ridge_days": 1
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "lat": 41.71,
+      "lon": -86.32,
+      "target": "last_spring",
+      "season_year": 2021,
+      "split": "holdout",
+      "obs": "2021-04-26",
+      "obs_yday": 116,
+      "median": "04-26",
+      "last_year": "2020-04-17",
+      "ridge": "04-25",
+      "err_median_days": 0,
+      "err_last_year_days": -9,
+      "err_ridge_days": -1
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "lat": 41.71,
+      "lon": -86.32,
+      "target": "last_spring",
+      "season_year": 2022,
+      "split": "holdout",
+      "obs": "2022-04-25",
+      "obs_yday": 115,
+      "median": "04-26",
+      "last_year": "2021-04-26",
+      "ridge": "04-28",
+      "err_median_days": 1,
+      "err_last_year_days": 1,
+      "err_ridge_days": 3
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "lat": 41.71,
+      "lon": -86.32,
+      "target": "last_spring",
+      "season_year": 2023,
+      "split": "holdout",
+      "obs": "2023-04-22",
+      "obs_yday": 112,
+      "median": "04-26",
+      "last_year": "2022-04-25",
+      "ridge": "04-22",
+      "err_median_days": 4,
+      "err_last_year_days": 3,
+      "err_ridge_days": 0
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "lat": 41.71,
+      "lon": -86.32,
+      "target": "last_spring",
+      "season_year": 2024,
+      "split": "holdout",
+      "obs": "2024-04-18",
+      "obs_yday": 109,
+      "median": "04-26",
+      "last_year": "2023-04-22",
+      "ridge": "04-21",
+      "err_median_days": 8,
+      "err_last_year_days": 4,
+      "err_ridge_days": 3
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "lat": 41.71,
+      "lon": -86.32,
+      "target": "last_spring",
+      "season_year": 2025,
+      "split": "holdout",
+      "obs": "2025-04-26",
+      "obs_yday": 116,
+      "median": "04-26",
+      "last_year": "2024-04-18",
+      "ridge": "04-26",
+      "err_median_days": 0,
+      "err_last_year_days": -8,
+      "err_ridge_days": 0
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "lat": 41.12,
+      "lon": -85.19,
+      "target": "first_fall",
+      "season_year": 2019,
+      "split": "holdout",
+      "obs": "2019-10-11",
+      "obs_yday": 284,
+      "median": "10-10",
+      "last_year": "2018-10-04",
+      "ridge": "10-11",
+      "err_median_days": -1,
+      "err_last_year_days": -7,
+      "err_ridge_days": 0
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "lat": 41.12,
+      "lon": -85.19,
+      "target": "first_fall",
+      "season_year": 2020,
+      "split": "holdout",
+      "obs": "2020-10-20",
+      "obs_yday": 294,
+      "median": "10-10",
+      "last_year": "2019-10-11",
+      "ridge": "10-17",
+      "err_median_days": -10,
+      "err_last_year_days": -9,
+      "err_ridge_days": -3
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "lat": 41.12,
+      "lon": -85.19,
+      "target": "first_fall",
+      "season_year": 2021,
+      "split": "holdout",
+      "obs": "2021-10-12",
+      "obs_yday": 285,
+      "median": "10-10",
+      "last_year": "2020-10-20",
+      "ridge": "10-09",
+      "err_median_days": -2,
+      "err_last_year_days": 8,
+      "err_ridge_days": -3
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "lat": 41.12,
+      "lon": -85.19,
+      "target": "first_fall",
+      "season_year": 2022,
+      "split": "holdout",
+      "obs": "2022-10-03",
+      "obs_yday": 276,
+      "median": "10-10",
+      "last_year": "2021-10-12",
+      "ridge": "10-05",
+      "err_median_days": 7,
+      "err_last_year_days": 9,
+      "err_ridge_days": 2
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "lat": 41.12,
+      "lon": -85.19,
+      "target": "first_fall",
+      "season_year": 2023,
+      "split": "holdout",
+      "obs": "2023-10-06",
+      "obs_yday": 279,
+      "median": "10-10",
+      "last_year": "2022-10-03",
+      "ridge": "10-13",
+      "err_median_days": 4,
+      "err_last_year_days": -3,
+      "err_ridge_days": 7
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "lat": 41.12,
+      "lon": -85.19,
+      "target": "first_fall",
+      "season_year": 2024,
+      "split": "holdout",
+      "obs": "2024-10-15",
+      "obs_yday": 289,
+      "median": "10-10",
+      "last_year": "2023-10-06",
+      "ridge": "10-15",
+      "err_median_days": -5,
+      "err_last_year_days": -9,
+      "err_ridge_days": 0
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "lat": 41.12,
+      "lon": -85.19,
+      "target": "last_spring",
+      "season_year": 2020,
+      "split": "holdout",
+      "obs": "2020-04-17",
+      "obs_yday": 108,
+      "median": "04-21",
+      "last_year": "2019-04-19",
+      "ridge": "04-16",
+      "err_median_days": 4,
+      "err_last_year_days": 2,
+      "err_ridge_days": -1
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "lat": 41.12,
+      "lon": -85.19,
+      "target": "last_spring",
+      "season_year": 2021,
+      "split": "holdout",
+      "obs": "2021-04-22",
+      "obs_yday": 112,
+      "median": "04-21",
+      "last_year": "2020-04-17",
+      "ridge": "04-21",
+      "err_median_days": -1,
+      "err_last_year_days": -5,
+      "err_ridge_days": -1
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "lat": 41.12,
+      "lon": -85.19,
+      "target": "last_spring",
+      "season_year": 2022,
+      "split": "holdout",
+      "obs": "2022-04-24",
+      "obs_yday": 114,
+      "median": "04-21",
+      "last_year": "2021-04-22",
+      "ridge": "04-25",
+      "err_median_days": -3,
+      "err_last_year_days": -2,
+      "err_ridge_days": 1
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "lat": 41.12,
+      "lon": -85.19,
+      "target": "last_spring",
+      "season_year": 2023,
+      "split": "holdout",
+      "obs": "2023-04-17",
+      "obs_yday": 107,
+      "median": "04-21",
+      "last_year": "2022-04-24",
+      "ridge": "04-18",
+      "err_median_days": 4,
+      "err_last_year_days": 7,
+      "err_ridge_days": 1
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "lat": 41.12,
+      "lon": -85.19,
+      "target": "last_spring",
+      "season_year": 2024,
+      "split": "holdout",
+      "obs": "2024-04-20",
+      "obs_yday": 111,
+      "median": "04-21",
+      "last_year": "2023-04-17",
+      "ridge": "04-16",
+      "err_median_days": 1,
+      "err_last_year_days": -3,
+      "err_ridge_days": -4
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "lat": 41.12,
+      "lon": -85.19,
+      "target": "last_spring",
+      "season_year": 2025,
+      "split": "holdout",
+      "obs": "2025-04-23",
+      "obs_yday": 113,
+      "median": "04-21",
+      "last_year": "2024-04-20",
+      "ridge": "04-23",
+      "err_median_days": -2,
+      "err_last_year_days": -3,
+      "err_ridge_days": 0
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "lat": 39.72,
+      "lon": -86.29,
+      "target": "first_fall",
+      "season_year": 2019,
+      "split": "holdout",
+      "obs": "2019-10-21",
+      "obs_yday": 294,
+      "median": "10-17",
+      "last_year": "2018-10-06",
+      "ridge": "10-18",
+      "err_median_days": -4,
+      "err_last_year_days": -15,
+      "err_ridge_days": -3
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "lat": 39.72,
+      "lon": -86.29,
+      "target": "first_fall",
+      "season_year": 2020,
+      "split": "holdout",
+      "obs": "2020-10-27",
+      "obs_yday": 301,
+      "median": "10-17",
+      "last_year": "2019-10-21",
+      "ridge": "10-24",
+      "err_median_days": -10,
+      "err_last_year_days": -6,
+      "err_ridge_days": -3
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "lat": 39.72,
+      "lon": -86.29,
+      "target": "first_fall",
+      "season_year": 2021,
+      "split": "holdout",
+      "obs": "2021-10-20",
+      "obs_yday": 293,
+      "median": "10-17",
+      "last_year": "2020-10-27",
+      "ridge": "10-17",
+      "err_median_days": -3,
+      "err_last_year_days": 7,
+      "err_ridge_days": -3
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "lat": 39.72,
+      "lon": -86.29,
+      "target": "first_fall",
+      "season_year": 2022,
+      "split": "holdout",
+      "obs": "2022-10-13",
+      "obs_yday": 286,
+      "median": "10-17",
+      "last_year": "2021-10-20",
+      "ridge": "10-12",
+      "err_median_days": 4,
+      "err_last_year_days": 7,
+      "err_ridge_days": -1
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "lat": 39.72,
+      "lon": -86.29,
+      "target": "first_fall",
+      "season_year": 2023,
+      "split": "holdout",
+      "obs": "2023-10-21",
+      "obs_yday": 294,
+      "median": "10-17",
+      "last_year": "2022-10-13",
+      "ridge": "10-21",
+      "err_median_days": -4,
+      "err_last_year_days": -8,
+      "err_ridge_days": 0
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "lat": 39.72,
+      "lon": -86.29,
+      "target": "first_fall",
+      "season_year": 2024,
+      "split": "holdout",
+      "obs": "2024-10-21",
+      "obs_yday": 295,
+      "median": "10-17",
+      "last_year": "2023-10-21",
+      "ridge": "10-24",
+      "err_median_days": -4,
+      "err_last_year_days": 0,
+      "err_ridge_days": 3
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "lat": 39.72,
+      "lon": -86.29,
+      "target": "last_spring",
+      "season_year": 2020,
+      "split": "holdout",
+      "obs": "2020-03-31",
+      "obs_yday": 91,
+      "median": "04-13",
+      "last_year": "2019-04-13",
+      "ridge": "04-08",
+      "err_median_days": 13,
+      "err_last_year_days": 13,
+      "err_ridge_days": 8
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "lat": 39.72,
+      "lon": -86.29,
+      "target": "last_spring",
+      "season_year": 2021,
+      "split": "holdout",
+      "obs": "2021-04-14",
+      "obs_yday": 104,
+      "median": "04-13",
+      "last_year": "2020-03-31",
+      "ridge": "04-14",
+      "err_median_days": -1,
+      "err_last_year_days": -14,
+      "err_ridge_days": 0
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "lat": 39.72,
+      "lon": -86.29,
+      "target": "last_spring",
+      "season_year": 2022,
+      "split": "holdout",
+      "obs": "2022-04-13",
+      "obs_yday": 103,
+      "median": "04-13",
+      "last_year": "2021-04-14",
+      "ridge": "04-15",
+      "err_median_days": 0,
+      "err_last_year_days": 1,
+      "err_ridge_days": 2
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "lat": 39.72,
+      "lon": -86.29,
+      "target": "last_spring",
+      "season_year": 2023,
+      "split": "holdout",
+      "obs": "2023-04-08",
+      "obs_yday": 98,
+      "median": "04-13",
+      "last_year": "2022-04-13",
+      "ridge": "04-10",
+      "err_median_days": 5,
+      "err_last_year_days": 5,
+      "err_ridge_days": 2
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "lat": 39.72,
+      "lon": -86.29,
+      "target": "last_spring",
+      "season_year": 2024,
+      "split": "holdout",
+      "obs": "2024-04-05",
+      "obs_yday": 96,
+      "median": "04-13",
+      "last_year": "2023-04-08",
+      "ridge": "04-08",
+      "err_median_days": 8,
+      "err_last_year_days": 3,
+      "err_ridge_days": 3
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "lat": 39.72,
+      "lon": -86.29,
+      "target": "last_spring",
+      "season_year": 2025,
+      "split": "holdout",
+      "obs": "2025-04-16",
+      "obs_yday": 106,
+      "median": "04-13",
+      "last_year": "2024-04-05",
+      "ridge": "04-14",
+      "err_median_days": -3,
+      "err_last_year_days": -11,
+      "err_ridge_days": -2
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "lat": 38.04,
+      "lon": -87.53,
+      "target": "first_fall",
+      "season_year": 2019,
+      "split": "holdout",
+      "obs": "2019-10-27",
+      "obs_yday": 300,
+      "median": "10-27",
+      "last_year": "2018-10-13",
+      "ridge": "10-28",
+      "err_median_days": 0,
+      "err_last_year_days": -14,
+      "err_ridge_days": 1
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "lat": 38.04,
+      "lon": -87.53,
+      "target": "first_fall",
+      "season_year": 2020,
+      "split": "holdout",
+      "obs": "2020-11-04",
+      "obs_yday": 309,
+      "median": "10-27",
+      "last_year": "2019-10-27",
+      "ridge": "11-04",
+      "err_median_days": -8,
+      "err_last_year_days": -8,
+      "err_ridge_days": 0
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "lat": 38.04,
+      "lon": -87.53,
+      "target": "first_fall",
+      "season_year": 2021,
+      "split": "holdout",
+      "obs": "2021-10-27",
+      "obs_yday": 300,
+      "median": "10-27",
+      "last_year": "2020-11-04",
+      "ridge": "10-26",
+      "err_median_days": 0,
+      "err_last_year_days": 8,
+      "err_ridge_days": -1
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "lat": 38.04,
+      "lon": -87.53,
+      "target": "first_fall",
+      "season_year": 2022,
+      "split": "holdout",
+      "obs": "2022-10-26",
+      "obs_yday": 299,
+      "median": "10-27",
+      "last_year": "2021-10-27",
+      "ridge": "10-23",
+      "err_median_days": 1,
+      "err_last_year_days": 1,
+      "err_ridge_days": -3
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "lat": 38.04,
+      "lon": -87.53,
+      "target": "first_fall",
+      "season_year": 2023,
+      "split": "holdout",
+      "obs": "2023-11-01",
+      "obs_yday": 305,
+      "median": "10-27",
+      "last_year": "2022-10-26",
+      "ridge": "10-30",
+      "err_median_days": -5,
+      "err_last_year_days": -6,
+      "err_ridge_days": -2
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "lat": 38.04,
+      "lon": -87.53,
+      "target": "first_fall",
+      "season_year": 2024,
+      "split": "holdout",
+      "obs": "2024-10-31",
+      "obs_yday": 305,
+      "median": "10-27",
+      "last_year": "2023-11-01",
+      "ridge": "11-03",
+      "err_median_days": -4,
+      "err_last_year_days": 1,
+      "err_ridge_days": 3
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "lat": 38.04,
+      "lon": -87.53,
+      "target": "last_spring",
+      "season_year": 2020,
+      "split": "holdout",
+      "obs": "2020-03-24",
+      "obs_yday": 84,
+      "median": "03-29",
+      "last_year": "2019-03-28",
+      "ridge": "03-23",
+      "err_median_days": 5,
+      "err_last_year_days": 4,
+      "err_ridge_days": -1
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "lat": 38.04,
+      "lon": -87.53,
+      "target": "last_spring",
+      "season_year": 2021,
+      "split": "holdout",
+      "obs": "2021-03-29",
+      "obs_yday": 88,
+      "median": "03-29",
+      "last_year": "2020-03-24",
+      "ridge": "03-29",
+      "err_median_days": 0,
+      "err_last_year_days": -5,
+      "err_ridge_days": 0
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "lat": 38.04,
+      "lon": -87.53,
+      "target": "last_spring",
+      "season_year": 2022,
+      "split": "holdout",
+      "obs": "2022-04-02",
+      "obs_yday": 92,
+      "median": "03-29",
+      "last_year": "2021-03-29",
+      "ridge": "04-01",
+      "err_median_days": -4,
+      "err_last_year_days": -4,
+      "err_ridge_days": -1
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "lat": 38.04,
+      "lon": -87.53,
+      "target": "last_spring",
+      "season_year": 2023,
+      "split": "holdout",
+      "obs": "2023-03-27",
+      "obs_yday": 86,
+      "median": "03-29",
+      "last_year": "2022-04-02",
+      "ridge": "03-26",
+      "err_median_days": 2,
+      "err_last_year_days": 6,
+      "err_ridge_days": -1
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "lat": 38.04,
+      "lon": -87.53,
+      "target": "last_spring",
+      "season_year": 2024,
+      "split": "holdout",
+      "obs": "2024-03-20",
+      "obs_yday": 80,
+      "median": "03-29",
+      "last_year": "2023-03-27",
+      "ridge": "03-25",
+      "err_median_days": 9,
+      "err_last_year_days": 7,
+      "err_ridge_days": 5
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "lat": 38.04,
+      "lon": -87.53,
+      "target": "last_spring",
+      "season_year": 2025,
+      "split": "holdout",
+      "obs": "2025-03-31",
+      "obs_yday": 90,
+      "median": "03-29",
+      "last_year": "2024-03-20",
+      "ridge": "03-31",
+      "err_median_days": -2,
+      "err_last_year_days": -11,
+      "err_ridge_days": 0
+    }
+  ],
+  "confirm_rows": [
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "lat": 41.71,
+      "lon": -86.32,
+      "target": "first_fall",
+      "season_year": 2025,
+      "split": "confirm",
+      "obs": "2025-10-03",
+      "obs_yday": 276,
+      "median": "10-03",
+      "last_year": "2024-10-13",
+      "ridge": "10-03",
+      "err_median_days": 0,
+      "err_last_year_days": 10,
+      "err_ridge_days": 0
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "South Bend",
+      "lat": 41.71,
+      "lon": -86.32,
+      "target": "last_spring",
+      "season_year": 2026,
+      "split": "confirm",
+      "obs": "2026-04-26",
+      "obs_yday": 116,
+      "median": "04-26",
+      "last_year": "2025-04-26",
+      "ridge": "04-21",
+      "err_median_days": 0,
+      "err_last_year_days": 0,
+      "err_ridge_days": -5
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "lat": 41.12,
+      "lon": -85.19,
+      "target": "first_fall",
+      "season_year": 2025,
+      "split": "confirm",
+      "obs": "2025-10-09",
+      "obs_yday": 282,
+      "median": "10-10",
+      "last_year": "2024-10-15",
+      "ridge": "10-08",
+      "err_median_days": 1,
+      "err_last_year_days": 6,
+      "err_ridge_days": -1
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "Fort Wayne",
+      "lat": 41.12,
+      "lon": -85.19,
+      "target": "last_spring",
+      "season_year": 2026,
+      "split": "confirm",
+      "obs": "2026-04-14",
+      "obs_yday": 104,
+      "median": "04-21",
+      "last_year": "2025-04-23",
+      "ridge": "04-16",
+      "err_median_days": 7,
+      "err_last_year_days": 9,
+      "err_ridge_days": 2
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "lat": 39.72,
+      "lon": -86.29,
+      "target": "first_fall",
+      "season_year": 2025,
+      "split": "confirm",
+      "obs": "2025-10-12",
+      "obs_yday": 285,
+      "median": "10-17",
+      "last_year": "2024-10-21",
+      "ridge": "10-16",
+      "err_median_days": 5,
+      "err_last_year_days": 9,
+      "err_ridge_days": 4
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "Indianapolis",
+      "lat": 39.72,
+      "lon": -86.29,
+      "target": "last_spring",
+      "season_year": 2026,
+      "split": "confirm",
+      "obs": "2026-04-06",
+      "obs_yday": 96,
+      "median": "04-13",
+      "last_year": "2025-04-16",
+      "ridge": "04-09",
+      "err_median_days": 7,
+      "err_last_year_days": 10,
+      "err_ridge_days": 3
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "lat": 38.04,
+      "lon": -87.53,
+      "target": "first_fall",
+      "season_year": 2025,
+      "split": "confirm",
+      "obs": "2025-10-23",
+      "obs_yday": 296,
+      "median": "10-27",
+      "last_year": "2024-10-31",
+      "ridge": "10-26",
+      "err_median_days": 4,
+      "err_last_year_days": 8,
+      "err_ridge_days": 3
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "Evansville",
+      "lat": 38.04,
+      "lon": -87.53,
+      "target": "last_spring",
+      "season_year": 2026,
+      "split": "confirm",
+      "obs": "2026-03-24",
+      "obs_yday": 83,
+      "median": "03-29",
+      "last_year": "2025-03-31",
+      "ridge": "03-24",
+      "err_median_days": 5,
+      "err_last_year_days": 7,
+      "err_ridge_days": 0
+    }
+  ],
+  "medians": {
+    "USW00014848|first_fall": "1999-10-03",
+    "USW00014848|last_spring": "1999-04-26",
+    "USW00014827|first_fall": "1999-10-10",
+    "USW00014827|last_spring": "1999-04-21",
+    "USW00093819|first_fall": "1999-10-17",
+    "USW00093819|last_spring": "1999-04-13",
+    "USW00093817|first_fall": "1999-10-27",
+    "USW00093817|last_spring": "1999-03-29"
+  },
+  "ridge_coef": {
+    "first_fall": [
+      6.779534275484745,
+      5.502333105637149,
+      -0.10924847271729064,
+      -0.4535172678743447,
+      -3.3521705044472725,
+      0.2757810167017121
+    ],
+    "last_spring": [
+      -4.0099349955393535,
+      5.3474313646031,
+      -1.229418162282366,
+      -0.27969786512547484,
+      4.029824366892842,
+      1.0608890179325814
+    ]
+  },
+  "feature_names": [
+    "nino34_oct",
+    "median_doy",
+    "oct_tavg_c",
+    "oct_prcp_in",
+    "lat",
+    "elev_m"
+  ],
+  "confirm_in_train": false,
+  "confirm_in_median": false,
+  "random_split": false,
+  "fall_holdout_years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "spring_holdout_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "targets": [
+    "first_fall",
+    "last_spring"
+  ]
+}

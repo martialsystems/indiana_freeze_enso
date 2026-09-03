@@ -1,0 +1,1522 @@
+{
+  "stage": "C",
+  "fixture": false,
+  "question": "Does October plus ENSO beat the 1991-2020 median first/last 32 \u00b0F date at held-out Indiana GHCND cores?",
+  "source": "live",
+  "n_rows": 348,
+  "n_stations": 4,
+  "units": "days",
+  "threshold_f": 32.0,
+  "element": "TMIN",
+  "feature_october": "prior_year",
+  "parent_sha": "28941fb",
+  "p_sfha_feature": false,
+  "nwm_file": false,
+  "snow_as_tmin": false,
+  "same_year_october": false,
+  "page_in_scope": false,
+  "ridge_beats_median": false,
+  "ridge_loses_both": false,
+  "figures": [
+    "scatter.png",
+    "mae_bars.png"
+  ],
+  "n_kept": 348,
+  "n_train": 228,
+  "n_holdout": 48,
+  "n_confirm": 8,
+  "holdout_cores": {
+    "by_target": {
+      "first_fall": {
+        "median": {
+          "n": 24,
+          "mae_days": 8.75,
+          "rmse_days": 11.460075625114056,
+          "bias_days": -5.916666666666667
+        },
+        "last_year": {
+          "n": 24,
+          "mae_days": 11.666666666666666,
+          "rmse_days": 13.241349377360804,
+          "bias_days": -3.25
+        },
+        "ridge": {
+          "n": 24,
+          "mae_days": 9.958333333333334,
+          "rmse_days": 11.87609644060988,
+          "bias_days": -5.541666666666667
+        },
+        "n": 24
+      },
+      "last_spring": {
+        "median": {
+          "n": 24,
+          "mae_days": 8.208333333333334,
+          "rmse_days": 10.553435459602717,
+          "bias_days": -4.958333333333333
+        },
+        "last_year": {
+          "n": 24,
+          "mae_days": 11.375,
+          "rmse_days": 15.675086389979908,
+          "bias_days": -0.7916666666666666
+        },
+        "ridge": {
+          "n": 24,
+          "mae_days": 7.625,
+          "rmse_days": 9.63716763369819,
+          "bias_days": -3.625
+        },
+        "n": 24
+      }
+    },
+    "by_station": {
+      "USW00014827": {
+        "name": "FT WAYNE INTL AP",
+        "station_id": "USW00014827",
+        "first_fall": {
+          "median": {
+            "n": 6,
+            "mae_days": 5.333333333333333,
+            "rmse_days": 6.377042156569663,
+            "bias_days": 0.0
+          },
+          "last_year": {
+            "n": 6,
+            "mae_days": 10.0,
+            "rmse_days": 11.460075625114056,
+            "bias_days": 0.0
+          },
+          "ridge": {
+            "n": 6,
+            "mae_days": 9.333333333333334,
+            "rmse_days": 10.392304845413264,
+            "bias_days": 0.0
+          },
+          "n": 6
+        },
+        "last_spring": {
+          "median": {
+            "n": 6,
+            "mae_days": 6.333333333333333,
+            "rmse_days": 8.524474568362947,
+            "bias_days": -4.0
+          },
+          "last_year": {
+            "n": 6,
+            "mae_days": 11.0,
+            "rmse_days": 17.72004514666935,
+            "bias_days": -2.6666666666666665
+          },
+          "ridge": {
+            "n": 6,
+            "mae_days": 5.666666666666667,
+            "rmse_days": 7.979139469057215,
+            "bias_days": -3.3333333333333335
+          },
+          "n": 6
+        }
+      },
+      "USW00014848": {
+        "name": "S BEND AP",
+        "station_id": "USW00014848",
+        "first_fall": {
+          "median": {
+            "n": 6,
+            "mae_days": 8.666666666666666,
+            "rmse_days": 10.03327796219494,
+            "bias_days": -8.333333333333334
+          },
+          "last_year": {
+            "n": 6,
+            "mae_days": 10.5,
+            "rmse_days": 11.481869766433224,
+            "bias_days": -1.8333333333333333
+          },
+          "ridge": {
+            "n": 6,
+            "mae_days": 8.833333333333334,
+            "rmse_days": 11.052903087726168,
+            "bias_days": -7.833333333333333
+          },
+          "n": 6
+        },
+        "last_spring": {
+          "median": {
+            "n": 6,
+            "mae_days": 7.166666666666667,
+            "rmse_days": 9.137833441248533,
+            "bias_days": -1.5
+          },
+          "last_year": {
+            "n": 6,
+            "mae_days": 7.0,
+            "rmse_days": 8.925618559330589,
+            "bias_days": 2.0
+          },
+          "ridge": {
+            "n": 6,
+            "mae_days": 7.833333333333333,
+            "rmse_days": 8.972179222463181,
+            "bias_days": -0.16666666666666666
+          },
+          "n": 6
+        }
+      },
+      "USW00093817": {
+        "name": "EVANSVILLE RGNL AP",
+        "station_id": "USW00093817",
+        "first_fall": {
+          "median": {
+            "n": 6,
+            "mae_days": 9.666666666666666,
+            "rmse_days": 13.354150416006753,
+            "bias_days": -7.0
+          },
+          "last_year": {
+            "n": 6,
+            "mae_days": 11.0,
+            "rmse_days": 13.844373104863458,
+            "bias_days": -6.0
+          },
+          "ridge": {
+            "n": 6,
+            "mae_days": 9.166666666666666,
+            "rmse_days": 11.394443090091475,
+            "bias_days": -5.833333333333333
+          },
+          "n": 6
+        },
+        "last_spring": {
+          "median": {
+            "n": 6,
+            "mae_days": 9.166666666666666,
+            "rmse_days": 11.782755761422425,
+            "bias_days": -8.5
+          },
+          "last_year": {
+            "n": 6,
+            "mae_days": 13.5,
+            "rmse_days": 15.465014279549393,
+            "bias_days": -1.1666666666666667
+          },
+          "ridge": {
+            "n": 6,
+            "mae_days": 8.833333333333334,
+            "rmse_days": 10.543560435956474,
+            "bias_days": -7.5
+          },
+          "n": 6
+        }
+      },
+      "USW00093819": {
+        "name": "INDIANAPOLIS",
+        "station_id": "USW00093819",
+        "first_fall": {
+          "median": {
+            "n": 6,
+            "mae_days": 11.333333333333334,
+            "rmse_days": 14.341083176199302,
+            "bias_days": -8.333333333333334
+          },
+          "last_year": {
+            "n": 6,
+            "mae_days": 15.166666666666666,
+            "rmse_days": 15.700318468107582,
+            "bias_days": -5.166666666666667
+          },
+          "ridge": {
+            "n": 6,
+            "mae_days": 12.5,
+            "rmse_days": 14.288690166235206,
+            "bias_days": -8.5
+          },
+          "n": 6
+        },
+        "last_spring": {
+          "median": {
+            "n": 6,
+            "mae_days": 10.166666666666666,
+            "rmse_days": 12.267844146385297,
+            "bias_days": -5.833333333333333
+          },
+          "last_year": {
+            "n": 6,
+            "mae_days": 14.0,
+            "rmse_days": 18.708286933869708,
+            "bias_days": -1.3333333333333333
+          },
+          "ridge": {
+            "n": 6,
+            "mae_days": 8.166666666666666,
+            "rmse_days": 10.778064142816495,
+            "bias_days": -3.5
+          },
+          "n": 6
+        }
+      }
+    },
+    "ridge_beats_both": false,
+    "ridge_loses_both": false,
+    "n": 48
+  },
+  "confirm": {
+    "by_target": {
+      "first_fall": {
+        "median": {
+          "n": 4,
+          "mae_days": 7.25,
+          "rmse_days": 8.231038816577165,
+          "bias_days": -7.25
+        },
+        "last_year": {
+          "n": 4,
+          "mae_days": 14.0,
+          "rmse_days": 16.926310879810757,
+          "bias_days": 10.0
+        },
+        "ridge": {
+          "n": 4,
+          "mae_days": 6.0,
+          "rmse_days": 6.96419413859206,
+          "bias_days": -6.0
+        },
+        "n": 4
+      },
+      "last_spring": {
+        "median": {
+          "n": 4,
+          "mae_days": 11.75,
+          "rmse_days": 13.162446581088183,
+          "bias_days": 5.75
+        },
+        "last_year": {
+          "n": 4,
+          "mae_days": 16.0,
+          "rmse_days": 16.32482771731451,
+          "bias_days": 0.5
+        },
+        "ridge": {
+          "n": 4,
+          "mae_days": 13.0,
+          "rmse_days": 14.933184523068078,
+          "bias_days": 7.0
+        },
+        "n": 4
+      }
+    },
+    "by_station": {
+      "USW00014827": {
+        "name": "FT WAYNE INTL AP",
+        "station_id": "USW00014827",
+        "first_fall": {
+          "median": {
+            "n": 1,
+            "mae_days": 7.0,
+            "rmse_days": 7.0,
+            "bias_days": -7.0
+          },
+          "last_year": {
+            "n": 1,
+            "mae_days": 8.0,
+            "rmse_days": 8.0,
+            "bias_days": -8.0
+          },
+          "ridge": {
+            "n": 1,
+            "mae_days": 6.0,
+            "rmse_days": 6.0,
+            "bias_days": -6.0
+          },
+          "n": 1
+        },
+        "last_spring": {
+          "median": {
+            "n": 1,
+            "mae_days": 8.0,
+            "rmse_days": 8.0,
+            "bias_days": -8.0
+          },
+          "last_year": {
+            "n": 1,
+            "mae_days": 15.0,
+            "rmse_days": 15.0,
+            "bias_days": -15.0
+          },
+          "ridge": {
+            "n": 1,
+            "mae_days": 9.0,
+            "rmse_days": 9.0,
+            "bias_days": -9.0
+          },
+          "n": 1
+        }
+      },
+      "USW00014848": {
+        "name": "S BEND AP",
+        "station_id": "USW00014848",
+        "first_fall": {
+          "median": {
+            "n": 1,
+            "mae_days": 7.0,
+            "rmse_days": 7.0,
+            "bias_days": -7.0
+          },
+          "last_year": {
+            "n": 1,
+            "mae_days": 3.0,
+            "rmse_days": 3.0,
+            "bias_days": 3.0
+          },
+          "ridge": {
+            "n": 1,
+            "mae_days": 6.0,
+            "rmse_days": 6.0,
+            "bias_days": -6.0
+          },
+          "n": 1
+        },
+        "last_spring": {
+          "median": {
+            "n": 1,
+            "mae_days": 4.0,
+            "rmse_days": 4.0,
+            "bias_days": -4.0
+          },
+          "last_year": {
+            "n": 1,
+            "mae_days": 16.0,
+            "rmse_days": 16.0,
+            "bias_days": -16.0
+          },
+          "ridge": {
+            "n": 1,
+            "mae_days": 3.0,
+            "rmse_days": 3.0,
+            "bias_days": -3.0
+          },
+          "n": 1
+        }
+      },
+      "USW00093817": {
+        "name": "EVANSVILLE RGNL AP",
+        "station_id": "USW00093817",
+        "first_fall": {
+          "median": {
+            "n": 1,
+            "mae_days": 13.0,
+            "rmse_days": 13.0,
+            "bias_days": -13.0
+          },
+          "last_year": {
+            "n": 1,
+            "mae_days": 17.0,
+            "rmse_days": 17.0,
+            "bias_days": 17.0
+          },
+          "ridge": {
+            "n": 1,
+            "mae_days": 11.0,
+            "rmse_days": 11.0,
+            "bias_days": -11.0
+          },
+          "n": 1
+        },
+        "last_spring": {
+          "median": {
+            "n": 1,
+            "mae_days": 18.0,
+            "rmse_days": 18.0,
+            "bias_days": 18.0
+          },
+          "last_year": {
+            "n": 1,
+            "mae_days": 21.0,
+            "rmse_days": 21.0,
+            "bias_days": 21.0
+          },
+          "ridge": {
+            "n": 1,
+            "mae_days": 21.0,
+            "rmse_days": 21.0,
+            "bias_days": 21.0
+          },
+          "n": 1
+        }
+      },
+      "USW00093819": {
+        "name": "INDIANAPOLIS",
+        "station_id": "USW00093819",
+        "first_fall": {
+          "median": {
+            "n": 1,
+            "mae_days": 2.0,
+            "rmse_days": 2.0,
+            "bias_days": -2.0
+          },
+          "last_year": {
+            "n": 1,
+            "mae_days": 28.0,
+            "rmse_days": 28.0,
+            "bias_days": 28.0
+          },
+          "ridge": {
+            "n": 1,
+            "mae_days": 1.0,
+            "rmse_days": 1.0,
+            "bias_days": -1.0
+          },
+          "n": 1
+        },
+        "last_spring": {
+          "median": {
+            "n": 1,
+            "mae_days": 17.0,
+            "rmse_days": 17.0,
+            "bias_days": 17.0
+          },
+          "last_year": {
+            "n": 1,
+            "mae_days": 12.0,
+            "rmse_days": 12.0,
+            "bias_days": 12.0
+          },
+          "ridge": {
+            "n": 1,
+            "mae_days": 19.0,
+            "rmse_days": 19.0,
+            "bias_days": 19.0
+          },
+          "n": 1
+        }
+      }
+    },
+    "ridge_beats_both": false,
+    "ridge_loses_both": false,
+    "n": 8
+  },
+  "holdout_rows": [
+    {
+      "station_id": "USW00014848",
+      "name": "S BEND AP",
+      "lat": 41.7072,
+      "lon": -86.3164,
+      "target": "first_fall",
+      "season_year": 2019,
+      "split": "holdout",
+      "obs": "2019-11-01",
+      "obs_yday": 305,
+      "median": "10-17",
+      "last_year": "2018-10-16",
+      "ridge": "10-19",
+      "err_median_days": -15,
+      "err_last_year_days": -16,
+      "err_ridge_days": -13
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "S BEND AP",
+      "lat": 41.7072,
+      "lon": -86.3164,
+      "target": "first_fall",
+      "season_year": 2020,
+      "split": "holdout",
+      "obs": "2020-10-16",
+      "obs_yday": 290,
+      "median": "10-17",
+      "last_year": "2019-11-01",
+      "ridge": "10-19",
+      "err_median_days": 1,
+      "err_last_year_days": 16,
+      "err_ridge_days": 3
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "S BEND AP",
+      "lat": 41.7072,
+      "lon": -86.3164,
+      "target": "first_fall",
+      "season_year": 2021,
+      "split": "holdout",
+      "obs": "2021-10-27",
+      "obs_yday": 300,
+      "median": "10-17",
+      "last_year": "2020-10-16",
+      "ridge": "10-11",
+      "err_median_days": -10,
+      "err_last_year_days": -11,
+      "err_ridge_days": -16
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "S BEND AP",
+      "lat": 41.7072,
+      "lon": -86.3164,
+      "target": "first_fall",
+      "season_year": 2022,
+      "split": "holdout",
+      "obs": "2022-10-20",
+      "obs_yday": 293,
+      "median": "10-17",
+      "last_year": "2021-10-27",
+      "ridge": "10-19",
+      "err_median_days": -3,
+      "err_last_year_days": 7,
+      "err_ridge_days": -1
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "S BEND AP",
+      "lat": 41.7072,
+      "lon": -86.3164,
+      "target": "first_fall",
+      "season_year": 2023,
+      "split": "holdout",
+      "obs": "2023-10-30",
+      "obs_yday": 303,
+      "median": "10-17",
+      "last_year": "2022-10-20",
+      "ridge": "10-13",
+      "err_median_days": -13,
+      "err_last_year_days": -10,
+      "err_ridge_days": -17
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "S BEND AP",
+      "lat": 41.7072,
+      "lon": -86.3164,
+      "target": "first_fall",
+      "season_year": 2024,
+      "split": "holdout",
+      "obs": "2024-10-27",
+      "obs_yday": 301,
+      "median": "10-17",
+      "last_year": "2023-10-30",
+      "ridge": "10-24",
+      "err_median_days": -10,
+      "err_last_year_days": 3,
+      "err_ridge_days": -3
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "S BEND AP",
+      "lat": 41.7072,
+      "lon": -86.3164,
+      "target": "last_spring",
+      "season_year": 2020,
+      "split": "holdout",
+      "obs": "2020-05-09",
+      "obs_yday": 130,
+      "median": "04-28",
+      "last_year": "2019-04-28",
+      "ridge": "04-29",
+      "err_median_days": -11,
+      "err_last_year_days": -11,
+      "err_ridge_days": -10
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "S BEND AP",
+      "lat": 41.7072,
+      "lon": -86.3164,
+      "target": "last_spring",
+      "season_year": 2021,
+      "split": "holdout",
+      "obs": "2021-05-13",
+      "obs_yday": 133,
+      "median": "04-28",
+      "last_year": "2020-05-09",
+      "ridge": "04-29",
+      "err_median_days": -15,
+      "err_last_year_days": -4,
+      "err_ridge_days": -14
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "S BEND AP",
+      "lat": 41.7072,
+      "lon": -86.3164,
+      "target": "last_spring",
+      "season_year": 2022,
+      "split": "holdout",
+      "obs": "2022-04-27",
+      "obs_yday": 117,
+      "median": "04-28",
+      "last_year": "2021-05-13",
+      "ridge": "05-02",
+      "err_median_days": 1,
+      "err_last_year_days": 16,
+      "err_ridge_days": 5
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "S BEND AP",
+      "lat": 41.7072,
+      "lon": -86.3164,
+      "target": "last_spring",
+      "season_year": 2023,
+      "split": "holdout",
+      "obs": "2023-04-27",
+      "obs_yday": 117,
+      "median": "04-28",
+      "last_year": "2022-04-27",
+      "ridge": "04-30",
+      "err_median_days": 1,
+      "err_last_year_days": 0,
+      "err_ridge_days": 3
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "S BEND AP",
+      "lat": 41.7072,
+      "lon": -86.3164,
+      "target": "last_spring",
+      "season_year": 2024,
+      "split": "holdout",
+      "obs": "2024-04-25",
+      "obs_yday": 116,
+      "median": "04-28",
+      "last_year": "2023-04-27",
+      "ridge": "04-28",
+      "err_median_days": 3,
+      "err_last_year_days": 2,
+      "err_ridge_days": 3
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "S BEND AP",
+      "lat": 41.7072,
+      "lon": -86.3164,
+      "target": "last_spring",
+      "season_year": 2025,
+      "split": "holdout",
+      "obs": "2025-04-16",
+      "obs_yday": 106,
+      "median": "04-28",
+      "last_year": "2024-04-25",
+      "ridge": "04-28",
+      "err_median_days": 12,
+      "err_last_year_days": 9,
+      "err_ridge_days": 12
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "FT WAYNE INTL AP",
+      "lat": 40.9725,
+      "lon": -85.2064,
+      "target": "first_fall",
+      "season_year": 2019,
+      "split": "holdout",
+      "obs": "2019-10-12",
+      "obs_yday": 285,
+      "median": "10-17",
+      "last_year": "2018-10-16",
+      "ridge": "10-20",
+      "err_median_days": 5,
+      "err_last_year_days": 4,
+      "err_ridge_days": 8
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "FT WAYNE INTL AP",
+      "lat": 40.9725,
+      "lon": -85.2064,
+      "target": "first_fall",
+      "season_year": 2020,
+      "split": "holdout",
+      "obs": "2020-10-16",
+      "obs_yday": 290,
+      "median": "10-17",
+      "last_year": "2019-10-12",
+      "ridge": "10-18",
+      "err_median_days": 1,
+      "err_last_year_days": -4,
+      "err_ridge_days": 2
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "FT WAYNE INTL AP",
+      "lat": 40.9725,
+      "lon": -85.2064,
+      "target": "first_fall",
+      "season_year": 2021,
+      "split": "holdout",
+      "obs": "2021-10-27",
+      "obs_yday": 300,
+      "median": "10-17",
+      "last_year": "2020-10-16",
+      "ridge": "10-10",
+      "err_median_days": -10,
+      "err_last_year_days": -11,
+      "err_ridge_days": -17
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "FT WAYNE INTL AP",
+      "lat": 40.9725,
+      "lon": -85.2064,
+      "target": "first_fall",
+      "season_year": 2022,
+      "split": "holdout",
+      "obs": "2022-10-08",
+      "obs_yday": 281,
+      "median": "10-17",
+      "last_year": "2021-10-27",
+      "ridge": "10-19",
+      "err_median_days": 9,
+      "err_last_year_days": 19,
+      "err_ridge_days": 11
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "FT WAYNE INTL AP",
+      "lat": 40.9725,
+      "lon": -85.2064,
+      "target": "first_fall",
+      "season_year": 2023,
+      "split": "holdout",
+      "obs": "2023-10-23",
+      "obs_yday": 296,
+      "median": "10-17",
+      "last_year": "2022-10-08",
+      "ridge": "10-12",
+      "err_median_days": -6,
+      "err_last_year_days": -15,
+      "err_ridge_days": -11
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "FT WAYNE INTL AP",
+      "lat": 40.9725,
+      "lon": -85.2064,
+      "target": "first_fall",
+      "season_year": 2024,
+      "split": "holdout",
+      "obs": "2024-10-16",
+      "obs_yday": 290,
+      "median": "10-17",
+      "last_year": "2023-10-23",
+      "ridge": "10-23",
+      "err_median_days": 1,
+      "err_last_year_days": 7,
+      "err_ridge_days": 7
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "FT WAYNE INTL AP",
+      "lat": 40.9725,
+      "lon": -85.2064,
+      "target": "last_spring",
+      "season_year": 2020,
+      "split": "holdout",
+      "obs": "2020-05-12",
+      "obs_yday": 133,
+      "median": "04-24",
+      "last_year": "2019-04-01",
+      "ridge": "04-24",
+      "err_median_days": -18,
+      "err_last_year_days": -41,
+      "err_ridge_days": -18
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "FT WAYNE INTL AP",
+      "lat": 40.9725,
+      "lon": -85.2064,
+      "target": "last_spring",
+      "season_year": 2021,
+      "split": "holdout",
+      "obs": "2021-05-01",
+      "obs_yday": 121,
+      "median": "04-24",
+      "last_year": "2020-05-12",
+      "ridge": "04-27",
+      "err_median_days": -7,
+      "err_last_year_days": 11,
+      "err_ridge_days": -4
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "FT WAYNE INTL AP",
+      "lat": 40.9725,
+      "lon": -85.2064,
+      "target": "last_spring",
+      "season_year": 2022,
+      "split": "holdout",
+      "obs": "2022-04-27",
+      "obs_yday": 117,
+      "median": "04-24",
+      "last_year": "2021-05-01",
+      "ridge": "04-29",
+      "err_median_days": -3,
+      "err_last_year_days": 4,
+      "err_ridge_days": 2
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "FT WAYNE INTL AP",
+      "lat": 40.9725,
+      "lon": -85.2064,
+      "target": "last_spring",
+      "season_year": 2023,
+      "split": "holdout",
+      "obs": "2023-04-26",
+      "obs_yday": 116,
+      "median": "04-24",
+      "last_year": "2022-04-27",
+      "ridge": "04-24",
+      "err_median_days": -2,
+      "err_last_year_days": 1,
+      "err_ridge_days": -2
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "FT WAYNE INTL AP",
+      "lat": 40.9725,
+      "lon": -85.2064,
+      "target": "last_spring",
+      "season_year": 2024,
+      "split": "holdout",
+      "obs": "2024-04-25",
+      "obs_yday": 116,
+      "median": "04-24",
+      "last_year": "2023-04-26",
+      "ridge": "04-22",
+      "err_median_days": -1,
+      "err_last_year_days": 1,
+      "err_ridge_days": -3
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "FT WAYNE INTL AP",
+      "lat": 40.9725,
+      "lon": -85.2064,
+      "target": "last_spring",
+      "season_year": 2025,
+      "split": "holdout",
+      "obs": "2025-04-17",
+      "obs_yday": 107,
+      "median": "04-24",
+      "last_year": "2024-04-25",
+      "ridge": "04-22",
+      "err_median_days": 7,
+      "err_last_year_days": 8,
+      "err_ridge_days": 5
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "INDIANAPOLIS",
+      "lat": 39.7075,
+      "lon": -86.2803,
+      "target": "first_fall",
+      "season_year": 2019,
+      "split": "holdout",
+      "obs": "2019-10-31",
+      "obs_yday": 304,
+      "median": "10-22",
+      "last_year": "2018-10-21",
+      "ridge": "10-24",
+      "err_median_days": -9,
+      "err_last_year_days": -10,
+      "err_ridge_days": -7
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "INDIANAPOLIS",
+      "lat": 39.7075,
+      "lon": -86.2803,
+      "target": "first_fall",
+      "season_year": 2020,
+      "split": "holdout",
+      "obs": "2020-10-16",
+      "obs_yday": 290,
+      "median": "10-22",
+      "last_year": "2019-10-31",
+      "ridge": "10-24",
+      "err_median_days": 6,
+      "err_last_year_days": 15,
+      "err_ridge_days": 8
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "INDIANAPOLIS",
+      "lat": 39.7075,
+      "lon": -86.2803,
+      "target": "first_fall",
+      "season_year": 2021,
+      "split": "holdout",
+      "obs": "2021-11-03",
+      "obs_yday": 307,
+      "median": "10-22",
+      "last_year": "2020-10-16",
+      "ridge": "10-16",
+      "err_median_days": -12,
+      "err_last_year_days": -18,
+      "err_ridge_days": -18
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "INDIANAPOLIS",
+      "lat": 39.7075,
+      "lon": -86.2803,
+      "target": "first_fall",
+      "season_year": 2022,
+      "split": "holdout",
+      "obs": "2022-10-19",
+      "obs_yday": 292,
+      "median": "10-22",
+      "last_year": "2021-11-03",
+      "ridge": "10-23",
+      "err_median_days": 3,
+      "err_last_year_days": 15,
+      "err_ridge_days": 4
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "INDIANAPOLIS",
+      "lat": 39.7075,
+      "lon": -86.2803,
+      "target": "first_fall",
+      "season_year": 2023,
+      "split": "holdout",
+      "obs": "2023-10-30",
+      "obs_yday": 303,
+      "median": "10-22",
+      "last_year": "2022-10-19",
+      "ridge": "10-16",
+      "err_median_days": -8,
+      "err_last_year_days": -11,
+      "err_ridge_days": -14
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "INDIANAPOLIS",
+      "lat": 39.7075,
+      "lon": -86.2803,
+      "target": "first_fall",
+      "season_year": 2024,
+      "split": "holdout",
+      "obs": "2024-11-21",
+      "obs_yday": 326,
+      "median": "10-22",
+      "last_year": "2023-10-30",
+      "ridge": "10-28",
+      "err_median_days": -30,
+      "err_last_year_days": -22,
+      "err_ridge_days": -24
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "INDIANAPOLIS",
+      "lat": 39.7075,
+      "lon": -86.2803,
+      "target": "last_spring",
+      "season_year": 2020,
+      "split": "holdout",
+      "obs": "2020-05-09",
+      "obs_yday": 130,
+      "median": "04-14",
+      "last_year": "2019-04-01",
+      "ridge": "04-16",
+      "err_median_days": -25,
+      "err_last_year_days": -38,
+      "err_ridge_days": -23
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "INDIANAPOLIS",
+      "lat": 39.7075,
+      "lon": -86.2803,
+      "target": "last_spring",
+      "season_year": 2021,
+      "split": "holdout",
+      "obs": "2021-04-22",
+      "obs_yday": 112,
+      "median": "04-14",
+      "last_year": "2020-05-09",
+      "ridge": "04-19",
+      "err_median_days": -8,
+      "err_last_year_days": 17,
+      "err_ridge_days": -3
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "INDIANAPOLIS",
+      "lat": 39.7075,
+      "lon": -86.2803,
+      "target": "last_spring",
+      "season_year": 2022,
+      "split": "holdout",
+      "obs": "2022-04-19",
+      "obs_yday": 109,
+      "median": "04-14",
+      "last_year": "2021-04-22",
+      "ridge": "04-21",
+      "err_median_days": -5,
+      "err_last_year_days": 3,
+      "err_ridge_days": 2
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "INDIANAPOLIS",
+      "lat": 39.7075,
+      "lon": -86.2803,
+      "target": "last_spring",
+      "season_year": 2023,
+      "split": "holdout",
+      "obs": "2023-04-24",
+      "obs_yday": 114,
+      "median": "04-14",
+      "last_year": "2022-04-19",
+      "ridge": "04-15",
+      "err_median_days": -10,
+      "err_last_year_days": -5,
+      "err_ridge_days": -9
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "INDIANAPOLIS",
+      "lat": 39.7075,
+      "lon": -86.2803,
+      "target": "last_spring",
+      "season_year": 2024,
+      "split": "holdout",
+      "obs": "2024-04-06",
+      "obs_yday": 97,
+      "median": "04-14",
+      "last_year": "2023-04-24",
+      "ridge": "04-13",
+      "err_median_days": 8,
+      "err_last_year_days": 18,
+      "err_ridge_days": 7
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "INDIANAPOLIS",
+      "lat": 39.7075,
+      "lon": -86.2803,
+      "target": "last_spring",
+      "season_year": 2025,
+      "split": "holdout",
+      "obs": "2025-04-09",
+      "obs_yday": 99,
+      "median": "04-14",
+      "last_year": "2024-04-06",
+      "ridge": "04-14",
+      "err_median_days": 5,
+      "err_last_year_days": -3,
+      "err_ridge_days": 5
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "EVANSVILLE RGNL AP",
+      "lat": 38.0503,
+      "lon": -87.5147,
+      "target": "first_fall",
+      "season_year": 2019,
+      "split": "holdout",
+      "obs": "2019-10-31",
+      "obs_yday": 304,
+      "median": "10-27",
+      "last_year": "2018-10-21",
+      "ridge": "10-30",
+      "err_median_days": -4,
+      "err_last_year_days": -10,
+      "err_ridge_days": -1
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "EVANSVILLE RGNL AP",
+      "lat": 38.0503,
+      "lon": -87.5147,
+      "target": "first_fall",
+      "season_year": 2020,
+      "split": "holdout",
+      "obs": "2020-11-01",
+      "obs_yday": 306,
+      "median": "10-27",
+      "last_year": "2019-10-31",
+      "ridge": "10-29",
+      "err_median_days": -5,
+      "err_last_year_days": -1,
+      "err_ridge_days": -3
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "EVANSVILLE RGNL AP",
+      "lat": 38.0503,
+      "lon": -87.5147,
+      "target": "first_fall",
+      "season_year": 2021,
+      "split": "holdout",
+      "obs": "2021-11-03",
+      "obs_yday": 307,
+      "median": "10-27",
+      "last_year": "2020-11-01",
+      "ridge": "10-23",
+      "err_median_days": -7,
+      "err_last_year_days": -2,
+      "err_ridge_days": -11
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "EVANSVILLE RGNL AP",
+      "lat": 38.0503,
+      "lon": -87.5147,
+      "target": "first_fall",
+      "season_year": 2022,
+      "split": "holdout",
+      "obs": "2022-10-19",
+      "obs_yday": 292,
+      "median": "10-27",
+      "last_year": "2021-11-03",
+      "ridge": "10-29",
+      "err_median_days": 8,
+      "err_last_year_days": 15,
+      "err_ridge_days": 10
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "EVANSVILLE RGNL AP",
+      "lat": 38.0503,
+      "lon": -87.5147,
+      "target": "first_fall",
+      "season_year": 2023,
+      "split": "holdout",
+      "obs": "2023-10-31",
+      "obs_yday": 304,
+      "median": "10-27",
+      "last_year": "2022-10-19",
+      "ridge": "10-23",
+      "err_median_days": -4,
+      "err_last_year_days": -12,
+      "err_ridge_days": -8
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "EVANSVILLE RGNL AP",
+      "lat": 38.0503,
+      "lon": -87.5147,
+      "target": "first_fall",
+      "season_year": 2024,
+      "split": "holdout",
+      "obs": "2024-11-26",
+      "obs_yday": 331,
+      "median": "10-27",
+      "last_year": "2023-10-31",
+      "ridge": "11-04",
+      "err_median_days": -30,
+      "err_last_year_days": -26,
+      "err_ridge_days": -22
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "EVANSVILLE RGNL AP",
+      "lat": 38.0503,
+      "lon": -87.5147,
+      "target": "last_spring",
+      "season_year": 2020,
+      "split": "holdout",
+      "obs": "2020-04-18",
+      "obs_yday": 109,
+      "median": "04-05",
+      "last_year": "2019-04-01",
+      "ridge": "04-07",
+      "err_median_days": -13,
+      "err_last_year_days": -17,
+      "err_ridge_days": -11
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "EVANSVILLE RGNL AP",
+      "lat": 38.0503,
+      "lon": -87.5147,
+      "target": "last_spring",
+      "season_year": 2021,
+      "split": "holdout",
+      "obs": "2021-04-22",
+      "obs_yday": 112,
+      "median": "04-05",
+      "last_year": "2020-04-18",
+      "ridge": "04-10",
+      "err_median_days": -17,
+      "err_last_year_days": -4,
+      "err_ridge_days": -12
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "EVANSVILLE RGNL AP",
+      "lat": 38.0503,
+      "lon": -87.5147,
+      "target": "last_spring",
+      "season_year": 2022,
+      "split": "holdout",
+      "obs": "2022-04-03",
+      "obs_yday": 93,
+      "median": "04-05",
+      "last_year": "2021-04-22",
+      "ridge": "04-07",
+      "err_median_days": 2,
+      "err_last_year_days": 19,
+      "err_ridge_days": 4
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "EVANSVILLE RGNL AP",
+      "lat": 38.0503,
+      "lon": -87.5147,
+      "target": "last_spring",
+      "season_year": 2023,
+      "split": "holdout",
+      "obs": "2023-04-24",
+      "obs_yday": 114,
+      "median": "04-05",
+      "last_year": "2022-04-03",
+      "ridge": "04-05",
+      "err_median_days": -19,
+      "err_last_year_days": -21,
+      "err_ridge_days": -19
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "EVANSVILLE RGNL AP",
+      "lat": 38.0503,
+      "lon": -87.5147,
+      "target": "last_spring",
+      "season_year": 2024,
+      "split": "holdout",
+      "obs": "2024-04-06",
+      "obs_yday": 97,
+      "median": "04-05",
+      "last_year": "2023-04-24",
+      "ridge": "04-03",
+      "err_median_days": -1,
+      "err_last_year_days": 18,
+      "err_ridge_days": -3
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "EVANSVILLE RGNL AP",
+      "lat": 38.0503,
+      "lon": -87.5147,
+      "target": "last_spring",
+      "season_year": 2025,
+      "split": "holdout",
+      "obs": "2025-04-08",
+      "obs_yday": 98,
+      "median": "04-05",
+      "last_year": "2024-04-06",
+      "ridge": "04-04",
+      "err_median_days": -3,
+      "err_last_year_days": -2,
+      "err_ridge_days": -4
+    }
+  ],
+  "confirm_rows": [
+    {
+      "station_id": "USW00014848",
+      "name": "S BEND AP",
+      "lat": 41.7072,
+      "lon": -86.3164,
+      "target": "first_fall",
+      "season_year": 2025,
+      "split": "confirm",
+      "obs": "2025-10-24",
+      "obs_yday": 297,
+      "median": "10-17",
+      "last_year": "2024-10-27",
+      "ridge": "10-18",
+      "err_median_days": -7,
+      "err_last_year_days": 3,
+      "err_ridge_days": -6
+    },
+    {
+      "station_id": "USW00014848",
+      "name": "S BEND AP",
+      "lat": 41.7072,
+      "lon": -86.3164,
+      "target": "last_spring",
+      "season_year": 2026,
+      "split": "confirm",
+      "obs": "2026-05-02",
+      "obs_yday": 122,
+      "median": "04-28",
+      "last_year": "2025-04-16",
+      "ridge": "04-29",
+      "err_median_days": -4,
+      "err_last_year_days": -16,
+      "err_ridge_days": -3
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "FT WAYNE INTL AP",
+      "lat": 40.9725,
+      "lon": -85.2064,
+      "target": "first_fall",
+      "season_year": 2025,
+      "split": "confirm",
+      "obs": "2025-10-24",
+      "obs_yday": 297,
+      "median": "10-17",
+      "last_year": "2024-10-16",
+      "ridge": "10-18",
+      "err_median_days": -7,
+      "err_last_year_days": -8,
+      "err_ridge_days": -6
+    },
+    {
+      "station_id": "USW00014827",
+      "name": "FT WAYNE INTL AP",
+      "lat": 40.9725,
+      "lon": -85.2064,
+      "target": "last_spring",
+      "season_year": 2026,
+      "split": "confirm",
+      "obs": "2026-05-02",
+      "obs_yday": 122,
+      "median": "04-24",
+      "last_year": "2025-04-17",
+      "ridge": "04-23",
+      "err_median_days": -8,
+      "err_last_year_days": -15,
+      "err_ridge_days": -9
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "INDIANAPOLIS",
+      "lat": 39.7075,
+      "lon": -86.2803,
+      "target": "first_fall",
+      "season_year": 2025,
+      "split": "confirm",
+      "obs": "2025-10-24",
+      "obs_yday": 297,
+      "median": "10-22",
+      "last_year": "2024-11-21",
+      "ridge": "10-23",
+      "err_median_days": -2,
+      "err_last_year_days": 28,
+      "err_ridge_days": -1
+    },
+    {
+      "station_id": "USW00093819",
+      "name": "INDIANAPOLIS",
+      "lat": 39.7075,
+      "lon": -86.2803,
+      "target": "last_spring",
+      "season_year": 2026,
+      "split": "confirm",
+      "obs": "2026-03-28",
+      "obs_yday": 87,
+      "median": "04-14",
+      "last_year": "2025-04-09",
+      "ridge": "04-16",
+      "err_median_days": 17,
+      "err_last_year_days": 12,
+      "err_ridge_days": 19
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "EVANSVILLE RGNL AP",
+      "lat": 38.0503,
+      "lon": -87.5147,
+      "target": "first_fall",
+      "season_year": 2025,
+      "split": "confirm",
+      "obs": "2025-11-09",
+      "obs_yday": 313,
+      "median": "10-27",
+      "last_year": "2024-11-26",
+      "ridge": "10-29",
+      "err_median_days": -13,
+      "err_last_year_days": 17,
+      "err_ridge_days": -11
+    },
+    {
+      "station_id": "USW00093817",
+      "name": "EVANSVILLE RGNL AP",
+      "lat": 38.0503,
+      "lon": -87.5147,
+      "target": "last_spring",
+      "season_year": 2026,
+      "split": "confirm",
+      "obs": "2026-03-18",
+      "obs_yday": 77,
+      "median": "04-05",
+      "last_year": "2025-04-08",
+      "ridge": "04-08",
+      "err_median_days": 18,
+      "err_last_year_days": 21,
+      "err_ridge_days": 21
+    }
+  ],
+  "medians": {
+    "USW00014848|first_fall": "1999-10-17",
+    "USW00014848|last_spring": "1999-04-28",
+    "USW00014827|first_fall": "1999-10-17",
+    "USW00014827|last_spring": "1999-04-24",
+    "USW00093819|first_fall": "1999-10-22",
+    "USW00093819|last_spring": "1999-04-14",
+    "USW00093817|first_fall": "1999-10-27",
+    "USW00093817|last_spring": "1999-04-05"
+  },
+  "ridge_coef": {
+    "first_fall": [
+      3.4482485987603098,
+      3.7199476015437614,
+      2.7105648371224156,
+      0.2713009740027323,
+      1.4718660833819206,
+      -0.47165518144168295
+    ],
+    "last_spring": [
+      -1.3019845094229807,
+      2.889639428724019,
+      0.207264357433504,
+      1.5822744849634591,
+      5.820724970988344,
+      0.2786395360948152
+    ]
+  },
+  "feature_names": [
+    "nino34_oct",
+    "median_doy",
+    "oct_tavg_c",
+    "oct_prcp_in",
+    "lat",
+    "elev_m"
+  ],
+  "confirm_in_train": false,
+  "confirm_in_median": false,
+  "random_split": false,
+  "fall_holdout_years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "spring_holdout_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "targets": [
+    "first_fall",
+    "last_spring"
+  ],
+  "fetch_meta": {
+    "n_stations": 4,
+    "n_rows": 348,
+    "product": "GHCND TMIN + prior-year October + Ni\u00f1o 3.4",
+    "units": "F",
+    "threshold_f": 32.0,
+    "parent_sha": "28941fb",
+    "cache_dir": "data/raw"
+  }
+}
