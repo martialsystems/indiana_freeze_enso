@@ -25,6 +25,7 @@ def test_readme_opens_with_the_question() -> None:
     assert "not in this tree" in text.lower() or "not in the lead" in text.lower()
     assert "USW00004846" not in text.split("Valparaiso")[0]
     assert INDEX_GIST.split("/")[-1] in text
+    assert "e5de316dbb5f672573906572730e3735" in text
     assert "scatter.png" in text
     assert "mae_bars.png" in text
     assert scan_text(text) == []
