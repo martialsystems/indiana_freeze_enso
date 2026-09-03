@@ -4,7 +4,7 @@ Does October plus ENSO beat the 1991-2020 median first/last 32 °F date at held-
 
 No on first fall; yes on last spring. Locked `d861556`. Holdout Ridge MAE is 9.96 days vs the 1991-2020 median 8.75 on first fall, and 7.62 vs 8.21 on last spring. That split is the product. Do not average it. Parent last-year vs median is frozen at `28941fb` in [indiana_freeze_date](https://github.com/martialsystems/indiana_freeze_date) (11.67 vs 8.75 fall; 11.38 vs 8.21 spring). Last year is a bar here, not the question. Valparaiso is not in this tree. Fixture skill does not rescue live. Pages stay off.
 
-[![First and last 32 F](https://img.shields.io/badge/First_and_last_32_F-2e7d32?style=for-the-badge)](https://github.com/martialsystems/indiana_freeze_date) [![Temp writeup](https://img.shields.io/badge/Temp_writeup-2e7d32?style=for-the-badge)](https://gist.github.com/martialsystems/e5de316dbb5f672573906572730e3735) [![Open the research console](https://img.shields.io/badge/Open_the_research_console-2e7d32?style=for-the-badge)](https://martialsystems.github.io/indiana_wx_pages/)
+[First and last 32 F](https://github.com/martialsystems/indiana_freeze_date) [Temp writeup](https://gist.github.com/martialsystems/e5de316dbb5f672573906572730e3735)
 
 Holdout n=24 station-seasons per target on the four cores (fall 2019-2024, spring 2020-2025). Train: fall 1991-2018 and spring 1991-2019. Confirmation fall 2025 / spring 2026 is out of train and out of the median.
 
@@ -69,4 +69,4 @@ Empty GHCND TMIN for a required core stops (`run_live.py` exit 2). Two figures m
 | `src/frzenso/` | GHCND TMIN, prior-year October, Niño 3.4, Ridge, figures |
 | `ensoforge/` | GraphForge pin |
 
-[![Open the research console](https://img.shields.io/badge/Open_the_research_console-2e7d32?style=for-the-badge)](https://martialsystems.github.io/indiana_wx_pages/)
+Research index: https://gist.github.com/martialsystems/66b896b0a4a0b8cba2b478aef64312f3

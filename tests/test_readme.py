@@ -24,18 +24,14 @@ def test_readme_opens_with_the_question() -> None:
     assert "Valparaiso" in text
     assert "not in this tree" in text.lower() or "not in the lead" in text.lower()
     assert "USW00004846" not in text.split("Valparaiso")[0]
-    assert "Open_the_research_console-2e7d32" in text
-    assert "martialsystems.github.io/indiana_wx_pages" in text
+    assert "Research index: https://gist.github.com/martialsystems/66b896b0a4a0b8cba2b478aef64312f3" in text
+    assert "Open_the_research_console" not in text
+    assert "66b896b0a4a0b8cba2b478aef64312f3" in text
     assert "e5de316dbb5f672573906572730e3735" in text
     assert "First and last 32 F" in text
     assert "indiana__freeze__date" not in text
     assert "Parent: [![" not in text
-    assert any(
-        "[![First and last 32 F]" in line
-        and "[![Temp writeup]" in line
-        and "[![Open the research console]" in line
-        for line in text.splitlines()
-    )
+    assert "Open_the_research_console" not in text
     assert "scatter.png" in text
     assert "mae_bars.png" in text
     assert scan_text(text) == []
@@ -43,7 +39,7 @@ def test_readme_opens_with_the_question() -> None:
     assert "What it is not" not in text
     assert "frost outlook" not in text.lower()
     assert "Indiana will freeze on" not in text
-    assert "Research index:" not in text
+    assert "Research index: https://gist.github.com/martialsystems/66b896b0a4a0b8cba2b478aef64312f3" in text
     assert ".venv/bin/python -m pytest" in text
     assert "/usr/bin/python3 -m pytest" not in text
     assert "No on first fall" in text
