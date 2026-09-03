@@ -27,6 +27,15 @@ def test_readme_opens_with_the_question() -> None:
     assert "Open_the_research_console-2e7d32" in text
     assert "martialsystems.github.io/indiana_wx_pages" in text
     assert "e5de316dbb5f672573906572730e3735" in text
+    assert "First and last 32 F" in text
+    assert "indiana__freeze__date" not in text
+    assert "Parent: [![" not in text
+    assert any(
+        "[![First and last 32 F]" in line
+        and "[![Temp writeup]" in line
+        and "[![Open the research console]" in line
+        for line in text.splitlines()
+    )
     assert "scatter.png" in text
     assert "mae_bars.png" in text
     assert scan_text(text) == []
