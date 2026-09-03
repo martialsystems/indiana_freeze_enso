@@ -16,6 +16,7 @@ def test_readme_opens_with_the_question() -> None:
     assert body.startswith(QUESTION)
     assert "1991-2020" in text
     assert "28941fb" in text
+    assert "d861556" in text
     assert "USW00014848" in text
     assert "USW00014827" in text
     assert "USW00093819" in text

@@ -68,4 +68,4 @@ A public date hero is refused unless Ridge beats the median on both targets, or 
 
 ## Live lock
 
-Holdout n=24 per target on the four cores. Ridge does not beat both targets. First fall MAE 9.96 vs median 8.75. Last spring MAE 7.62 vs median 8.21. Last year 11.67 / 11.38 matches `28941fb` and is not the question. Evansville Ridge beats the median on both targets. South Bend Ridge loses both. Confirmation fall 2025 / spring 2026 does not set the median and does not reopen a page. Valparaiso is not in this tree.
+Locked `d861556`. Holdout n=24 per target on the four cores. Ridge does not beat both targets. First fall MAE 9.96 vs median 8.75. Last spring MAE 7.62 vs median 8.21. Last year 11.67 / 11.38 matches `28941fb` and is not the question. Evansville Ridge beats the median on both targets. South Bend Ridge loses both. Confirmation fall 2025 / spring 2026 does not set the median and does not reopen a page. Valparaiso is not in this tree.

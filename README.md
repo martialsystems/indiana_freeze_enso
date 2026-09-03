@@ -2,7 +2,7 @@
 
 Does October plus ENSO beat the 1991-2020 median first/last 32 °F date at held-out Indiana GHCND cores?
 
-No on first fall; yes on last spring. Holdout Ridge MAE is 9.96 days vs the 1991-2020 median 8.75 on first fall, and 7.62 vs 8.21 on last spring. That split is the product. Do not average it. Parent last-year vs median is frozen at `28941fb` in [indiana_freeze_date](https://github.com/martialsystems/indiana_freeze_date) (11.67 vs 8.75 fall; 11.38 vs 8.21 spring). Last year is a bar here, not the question. Valparaiso is not in this tree. Fixture skill does not rescue live. Pages stay off.
+No on first fall; yes on last spring. Locked `d861556`. Holdout Ridge MAE is 9.96 days vs the 1991-2020 median 8.75 on first fall, and 7.62 vs 8.21 on last spring. That split is the product. Do not average it. Parent last-year vs median is frozen at `28941fb` in [indiana_freeze_date](https://github.com/martialsystems/indiana_freeze_date) (11.67 vs 8.75 fall; 11.38 vs 8.21 spring). Last year is a bar here, not the question. Valparaiso is not in this tree. Fixture skill does not rescue live. Pages stay off.
 
 Parent: https://github.com/martialsystems/indiana_freeze_date  
 Research index: https://gist.github.com/martialsystems/66b896b0a4a0b8cba2b478aef64312f3
