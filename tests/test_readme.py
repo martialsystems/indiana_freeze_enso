@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 from frzenso.claims import scan_text
-from frzenso.config import INDEX_GIST, QUESTION
+from frzenso.config import QUESTION
 
 REPO = Path(__file__).resolve().parents[1]
 LIVE = REPO / "logs" / "in_live" / "stage_c_report.json"
@@ -24,7 +24,8 @@ def test_readme_opens_with_the_question() -> None:
     assert "Valparaiso" in text
     assert "not in this tree" in text.lower() or "not in the lead" in text.lower()
     assert "USW00004846" not in text.split("Valparaiso")[0]
-    assert INDEX_GIST.split("/")[-1] in text
+    assert "Open_the_research_console-2e7d32" in text
+    assert "martialsystems.github.io/indiana_wx_pages" in text
     assert "e5de316dbb5f672573906572730e3735" in text
     assert "scatter.png" in text
     assert "mae_bars.png" in text
@@ -33,7 +34,7 @@ def test_readme_opens_with_the_question() -> None:
     assert "What it is not" not in text
     assert "frost outlook" not in text.lower()
     assert "Indiana will freeze on" not in text
-    assert "Research index: https://gist.github.com/martialsystems/66b896b0a4a0b8cba2b478aef64312f3" in text
+    assert "Research index:" not in text
     assert ".venv/bin/python -m pytest" in text
     assert "/usr/bin/python3 -m pytest" not in text
     assert "No on first fall" in text

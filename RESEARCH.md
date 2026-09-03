@@ -1,7 +1,7 @@
 # Indiana research
 
-The readable index is the gist: https://gist.github.com/martialsystems/66b896b0a4a0b8cba2b478aef64312f3
+[![Open the research console](https://img.shields.io/badge/Open_the_research_console-2e7d32?style=for-the-badge)](https://martialsystems.github.io/indiana_wx_pages/)
 
-This tree is the Temp lane: October plus ENSO vs the 1991-2020 median first/last 32 °F date at Indiana GHCND cores. Parent last-year vs median is `indiana_freeze_date` @ `28941fb`. Lane writeup: https://gist.github.com/martialsystems/e5de316dbb5f672573906572730e3735
+This tree is the Temp lane: October plus ENSO vs the 1991-2020 median first/last 32 °F date at Indiana GHCND cores. Parent last-year vs median is `indiana_freeze_date` @ `28941fb`. Lane writeup: [![Temp writeup](https://img.shields.io/badge/Temp_writeup-2e7d32?style=for-the-badge)](https://gist.github.com/martialsystems/e5de316dbb5f672573906572730e3735)
 
 MIT. Martial Systems LLC.
